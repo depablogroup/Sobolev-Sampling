@@ -1,0 +1,26 @@
+colvar {
+  name vec1
+  outputValue on
+  outputAppliedForce yes
+ width 0.084
+ lowerboundary 1.60
+ upperboundary 10.0
+ lowerWall 0.0
+ UpperWall 12.0
+ lowerwallconstant 1.0
+ upperwallconstant 1.0
+ extendedlagrangian   on
+ extendedFluctuation  0.084
+ extendedTemp 300
+ 
+  distance {
+    group1 { atomNumbers 5134 } # atoms in molecule 2
+    group2 { atomNumbers 1883 } # atoms to pull in molecule 1
+  }
+}
+
+abf {
+  colvars vec1 
+  fullSamples 500
+historyFreq 500000
+}

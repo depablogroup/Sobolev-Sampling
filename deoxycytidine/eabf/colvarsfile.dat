@@ -1,0 +1,63 @@
+colvar {
+  name vec1
+  outputValue on
+  outputAppliedForce yes
+ width 3.870967742
+ lowerboundary -60
+ upperboundary 60
+ lowerWall -65
+ UpperWall 65
+ lowerwallconstant 1.0
+ upperwallconstant 1.0
+ extendedlagrangian   on
+ extendedFluctuation  1.0
+ extendedTemp 300
+  dihedral {
+    componentCoeff -0.6180339887498949
+    group1 { atomNumbers 1 } 
+    group2 { atomNumbers 11 }
+    group3 { atomNumbers 9 } 
+    group4 { atomNumbers 8 } 
+  }
+  dihedral {
+    componentCoeff -0.6180339887498949
+    group1 { atomNumbers 1 } 
+    group2 { atomNumbers 10 }
+    group3 { atomNumbers 8 } 
+    group4 { atomNumbers 9 } 
+  }
+ }
+colvar {
+  name vec2
+  outputValue on
+  outputAppliedForce yes
+ width 3.870967742
+ lowerboundary -60
+ upperboundary 60
+ lowerWall -65
+ UpperWall 65
+ lowerwallconstant 1.0
+ upperwallconstant 1.0
+ extendedlagrangian   on
+ extendedFluctuation  1.0
+ extendedTemp 300
+  dihedral {
+    componentCoeff 0.8506508083520398
+    group1 { atomNumbers 1 } 
+    group2 { atomNumbers 11 }
+    group3 { atomNumbers 9 } 
+    group4 { atomNumbers 8 } 
+  }
+  dihedral {
+    componentCoeff -0.8506508083520398
+    group1 { atomNumbers 1 } 
+    group2 { atomNumbers 10 }
+    group3 { atomNumbers 8 } 
+    group4 { atomNumbers 9 } 
+  }
+}
+abf {
+  colvars vec1 vec2
+  fullSamples 500
+historyFreq 500000
+}
