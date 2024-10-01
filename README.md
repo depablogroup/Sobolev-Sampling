@@ -1,6 +1,6 @@
 # Running simulations with Sirens and Spectral-ABF
 
-This repository contains files related to the benchmarks in the paper:
+This repository contains files related to the benchmarks in the paper: Efficient Sampling of Free Energy Landscapes with Functions in Sobolev Spaces
 
 ## Directory Structure
 
