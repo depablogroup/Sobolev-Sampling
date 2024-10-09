@@ -4,8 +4,8 @@ This repository contains files related to the benchmarks in the paper: Efficient
 
 ## Directory Structure
 
-- [**cyclohexane/**](#PySAGES simulation of internal dihedral of cyclohexane)
-- [**water/**](#PySAGES simulation with constraints)
-- [**deoxycytidine**](#PySAGES simulation of non-orthogonal CVs)
-
+- [**cyclohexane**](PySAGES simulation of internal dihedral of cyclohexane)
+- [**water**](PySAGES simulation with constraints)
+- [**deoxycytidine**](PySAGES simulation of non-orthogonal CVs)
+- [**alanine-tripeptide**](PySAGES simulation of multiple CVs)
 Go to each subfolder for a detailed description.
